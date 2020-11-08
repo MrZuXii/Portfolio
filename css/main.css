@@ -238,14 +238,13 @@ footer::before {
 }
 
 .project div {
-    /* background-image: radial-gradient(#191a1d, #ca0339); */
-    border-radius: 6px;
+    border-radius: 2%;
     opacity: 0.95;
-    background: #2d2f3529;
     position: relative;
+    box-shadow: 3px 3px 16px 0 rgb(0 0 0 / 44%);
 }
 
-.project div::after {
+/* .project div::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -261,7 +260,7 @@ footer::before {
 
 .project div:hover::after {
     background-color: #ca0239;
-}
+} */
 
 .project img {
     width: 100%;
@@ -329,7 +328,7 @@ footer::before {
         box-sizing: border-box;
     }
 
-    .project div::after {
+    /* .project div::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -341,7 +340,7 @@ footer::before {
         transition: .2s;
         bottom: 0px;
         transform: rotate(1deg);
-    }
+    } */
 
     section h1::after {
         content: "";
