@@ -4,5 +4,5 @@ const column = document.querySelector("nav");
 const menu = document.querySelector(".menu");
 
 burger.addEventListener("click", function () {
-    column.classList.toggle("show"); //nie
+    column.classList.toggle("shows"); //nie
 })

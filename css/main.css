@@ -151,8 +151,8 @@ nav ul {
     margin: 18px 7px;
 }
 
-.header .show {
-    display: block;
+.header .shows {
+    right: 0;
 }
 
 
@@ -381,19 +381,22 @@ footer::before {
     }
 
     .header nav {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
+        right: -70%;
         background: #191a1d;
         z-index: 5;
         top: 49px;
         justify-content: center;
         text-transform: uppercase;
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        border-left: 1px solid #000;
+        transition: .3s;
     }
 
     nav ul {
         flex-direction: column;
+        flex-basis: 100%;
     }
 
     header {
