@@ -1,8 +1,5 @@
-const burger = document.querySelector(".burger");
-
-const column = document.querySelector("nav");
-const menu = document.querySelector(".menu");
-
-burger.addEventListener("click", function () {
-    column.classList.toggle("shows"); //nie
+const IconBurger = document.querySelector(".burger");
+const HeaderNav = document.querySelector("nav");
+IconBurger.addEventListener("click", function () {
+    HeaderNav.classList.toggle("shows"); //nie
 })

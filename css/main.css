@@ -324,7 +324,7 @@ footer::before {
     border-radius: 2%;
     opacity: 0.95;
     position: relative;
-    box-shadow: 3px 3px 16px 0 rgb(0 0 0 / 44%);
+    box-shadow: inset 0px 0px 20px 0 rgb(0 0 0 / 29%);
 }
 
 .project img {
@@ -369,6 +369,20 @@ footer::before {
 
     .menu {
         border-bottom: 1px solid #000;
+        font-size: 14px;
+    }
+
+    .menu a {
+        padding: 10px;
+        color: white;
+    }
+
+    .menu:hover:after {
+        transform: scaleX(0);
+    }
+
+    .menu:hover {
+        box-shadow: inset 1px -1px 9px 0px rgb(0 0 0 / 44%);
     }
 
     .text-one,
@@ -388,7 +402,7 @@ footer::before {
         justify-content: center;
         text-transform: uppercase;
         position: fixed;
-        width: 70%;
+        width: 240px;
         height: 100vh;
         border-left: 1px solid #000;
         transition: .3s;
