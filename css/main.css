@@ -425,6 +425,11 @@ footer {
     .text-one,
     h2 {
         text-align: center;
+        margin: auto;
+    }
+
+    .text-one {
+        padding-top: 200px;
     }
 
     html {
