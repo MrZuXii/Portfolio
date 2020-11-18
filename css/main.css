@@ -1,6 +1,6 @@
 /* Head */
 :root {
-    --main-background: url(/img/background-992850_640.png);
+    --main-background: #121315;
     --red: #ca0239;
 }
 
@@ -312,7 +312,7 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    background: rgb(19 19 19);
+    background: var(--main-background);
     color: white;
     line-height: 100px;
     border-top: 7px solid var(--red);
