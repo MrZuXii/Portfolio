@@ -316,20 +316,6 @@ footer {
     border-top: 7px solid var(--red);
 }
 
-/* footer::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 6px;
-    background-color: #ca0239;
-    border-radius: 5px;
-    left: 0;
-    margin: auto;
-    transition: .2s;
-    bottom: 115px;
-    transform: rotate(1deg);
-} */
-
 /* Animaton */
 @keyframes here {
     100% {
@@ -379,9 +365,6 @@ footer {
     opacity: 1;
 }
 
-/* 
-
-*/
 /* Media */
 @media (max-width: 1024px) {
     .header-logo {
@@ -518,10 +501,3 @@ footer {
         flex-wrap: nowrap;
     }
 }
-
-/* z-index: 980;
-position: fixed;
-background: #00000075;
-width: 100%;
-height: 100vh;
-left: 0; */
