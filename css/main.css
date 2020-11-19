@@ -40,7 +40,6 @@ header:after {
     top: 0px;
     width: 100%;
     z-index: -1;
-    position: fixed;
 }
 
 .home-page {
@@ -259,7 +258,6 @@ div.main-contain>div>div {
     transform: rotate(45deg) translate(60px, 0px);
     border-radius: 23px;
     overflow: hidden;
-    background-position: unset;
 }
 
 div.main-contain>div:nth-child(2) {
@@ -407,6 +405,7 @@ footer {
     .menu {
         border-bottom: 1px solid #000;
         font-size: 14px;
+        list-style: none;
     }
 
     .menu a {
