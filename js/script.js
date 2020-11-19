@@ -1,7 +1,7 @@
 const IconBurger = document.querySelector(".burger");
 const HeaderNav = document.querySelector("nav");
 const OverFlow = document.querySelectorAll(".overflow")
-const Cross = document.querySelector(".fa-times")
+const Cross = document.querySelectorAll(".menu a")
 
 function ChangeMenu() {
     HeaderNav.classList.toggle("shows");
@@ -10,7 +10,9 @@ function ChangeMenu() {
     document.body.classList.toggle("on");
 }
 IconBurger.addEventListener("click", ChangeMenu)
-IconBurger.addEventListener("click", ChangeMenu)
 OverFlow[0].addEventListener("click", ChangeMenu)
 OverFlow[1].addEventListener("click", ChangeMenu)
-Cross.addEventListener("click", ChangeMenu)
+Cross[0].addEventListener("click", ChangeMenu)
+Cross[1].addEventListener("click", ChangeMenu)
+Cross[2].addEventListener("click", ChangeMenu)
+Cross[3].addEventListener("click", ChangeMenu)
