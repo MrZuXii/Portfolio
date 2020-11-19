@@ -8,6 +8,7 @@ function ChangeMenu() {
     OverFlow[0].classList.toggle("on");
     OverFlow[1].classList.toggle("on");
     document.body.classList.toggle("on");
+    IconBurger.classList.toggle("on");
 }
 IconBurger.addEventListener("click", ChangeMenu)
 OverFlow[0].addEventListener("click", ChangeMenu)
