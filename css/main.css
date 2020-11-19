@@ -66,7 +66,7 @@ header:after {
     cursor: pointer;
     font-size: 3rem;
     position: relative;
-    z-index: 51;
+    z-index: 48;
     font-weight: 400;
 }
 
@@ -104,6 +104,10 @@ nav ul {
     font-size: 2.2rem;
     text-align: center;
     position: relative;
+}
+
+.menu i {
+    display: none;
 }
 
 .menu a {
@@ -216,7 +220,6 @@ section h1::after {
     border-radius: 5px;
     left: calc(50% - 85px);
     margin: auto;
-    transition: all 0.2s ease 0s;
     bottom: -32px;
 }
 
@@ -229,7 +232,6 @@ section h1::before {
     border-radius: 5px;
     left: calc(50% - 150px);
     margin: auto;
-    transition: all 0.2s ease 0s;
     bottom: -14px;
 }
 
@@ -367,6 +369,10 @@ footer {
 
 /* Media */
 @media (max-width: 1024px) {
+    body.on {
+        overflow: hidden;
+    }
+
     .header-logo {
         padding: 10px;
     }
@@ -380,7 +386,7 @@ footer {
         position: fixed;
         left: 0;
         right: 0;
-        background: #191a1d;
+        background: var(--main-background);
         padding: 0;
         border-bottom: 1px solid #000;
     }
@@ -389,6 +395,14 @@ footer {
         border-bottom: 1px solid #000;
         font-size: 14px;
         list-style: none;
+        text-align: left;
+    }
+
+    .menu i {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0 20px;
     }
 
     .menu a {
@@ -404,6 +418,20 @@ footer {
         box-shadow: inset 1px -1px 9px 0px rgb(0 0 0 / 44%);
     }
 
+    .overflow {
+        transition: .2s linear;
+    }
+
+    .overflow.on {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 50;
+        background: #00000087;
+    }
+
     .text-one,
     h2 {
         text-align: center;
@@ -411,7 +439,7 @@ footer {
     }
 
     .text-one {
-        padding-top: 50%;
+        padding-top: 170px;
     }
 
     html {
@@ -421,20 +449,24 @@ footer {
     .header nav {
         right: -70%;
         background: #191a1d;
-        z-index: 5;
-        top: 49px;
+        z-index: 50;
+        top: 0;
         justify-content: center;
         text-transform: uppercase;
         position: fixed;
         width: 240px;
         height: 100vh;
-        border-left: 1px solid #000;
-        transition: .3s;
+        transition: .2s;
     }
 
     nav ul {
         flex-direction: column;
         flex-basis: 100%;
+        padding-top: 49px;
+    }
+
+    nav ul li:nth-of-type(1) {
+        border-top: 1px solid #000;
     }
 
     header {
@@ -447,6 +479,7 @@ footer {
 
     .burger {
         display: block;
+        z-index: 5;
     }
 
     .main-contain {
