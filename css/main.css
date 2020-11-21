@@ -485,6 +485,7 @@ footer span {
     .menu a {
         padding: 10px;
         color: white;
+        line-height: 40px;
     }
 
 
@@ -512,6 +513,7 @@ footer span {
 
     .header-text {
         text-align: center;
+        margin: 0;
     }
 
     html {
