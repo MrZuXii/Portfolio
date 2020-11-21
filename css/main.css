@@ -208,9 +208,9 @@ nav ul {
 .header-text {
     position: absolute;
     top: 50%;
-    right: 0;
-    left: 0;
     transform: translate(0, -50%);
+    font-weight: 400;
+    margin-left: 10%;
     font-weight: 400;
 }
 
@@ -541,6 +541,11 @@ footer span {
 
     header {
         height: 450px;
+    }
+
+    .header-text {
+        right: 0;
+        left: 0;
     }
 
     .header {
