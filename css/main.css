@@ -115,7 +115,9 @@ nav ul {
     text-decoration: none;
     display: block;
     color: #ababab;
-    padding: 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    line-height: 77px;
 }
 
 .menu:hover a {
@@ -238,13 +240,14 @@ nav ul {
 }
 
 section h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     text-align: center;
     cursor: pointer;
     position: relative;
     margin: 10rem 0;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 section h1::after {
