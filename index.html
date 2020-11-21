@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
         integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/42abeb4874.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,22 +20,24 @@
         <div id="particles-js" class="home-page"></div>
         <div class="header">
             <div class="overflow"></div>
-            <h1 class="header-logo">Mr ZuXii</h1>
+            <h1 class="logo">Mr ZuXii</h1>
             <nav>
                 <ul>
                     <li class="menu"><a href="#main-me"><i class="fas fa-user"></i>O mnie </a></li>
                     <li class="menu"><a href="#main-skill"><i class="fas fa-lightbulb"></i>Moje umiejetności</a></li>
                     <li class="menu"><a href="#main-projects"><i class="fas fa-pencil-ruler"></i>Moje projekty</a></li>
                     <li class="menu"><a href="#main-contact"><i class="fas fa-envelope"></i>Kontakt</a> </li>
-
                 </ul>
             </nav>
             <div class="burger">
                 <div></div>
             </div>
         </div>
-        <h1 class="text-one">Hello my name is Kamil</h1>
-        <h2>I'm web developer</h2>
+        <div class="header-text">
+            <h1 class="text-one">Hello my name is Kamil</h1>
+            <h2>I'm web developer</h2>
+        </div>
+
     </header>
     <main>
         <section id="main-me">
@@ -53,8 +55,19 @@
                 </div>
             </div>
         </section>
-        <section id="main-skill" style="padding-bottom: 800px;">
+        <section id="main-skill">
             <h1>Moje umiejetności</h1>
+            <div class="wrap-skill">
+                <p>Tworze strony w oparciu o technologie
+                    <span>HTML5</span>, <span>CSS3</span> oraz <span>JS3</span></p>
+                <div class="skill-icon">
+                    <img src="img/iconfinder_badge-html-5_317755.png" width="85" height="85" alt="Ikonka HTML5">
+                    <img src="img/iconfinder_badge-css-3_317756.png" width="85" height="85" alt="Ikonka CSS3">
+                    <img src="img/iconfinder_187_Js_logo_logos_4373213.png" width="85" height="85" alt="Ikonka JS">
+                </div>
+                <p>Mógłbym tutaj wpisać jak bardzo potrafię korzystać z tych technologi, aczkolwiek najlepiej pokażą to
+                    projekty, które stworzyłem.</p>
+            </div>
         </section>
         <section id="main-projects">
             <h1>Moje Projekty</h1>
@@ -90,14 +103,14 @@
 
             </div>
         </section>
-        <section id="main-contact" style="padding-bottom: 800px;">
+        <!-- <section id="main-contact">
             <h1>Kontakt</h1>
-        </section>
+        </section> -->
         </div>
     </main>
     </div>
 
-    <footer>Kamil Bieniek</footer>
+    <footer>© 2020 <span>Kamil Bieniek</span> - Wszelkie prawa zastrzeżone</footer>
 
 
     <script src="js/script.js"></script>

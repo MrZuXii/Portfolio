@@ -15,8 +15,8 @@ html {
 }
 
 body {
-    background-color: #191A1D;
-    font-family: arial, sans-serif;
+    background-color: var(--main-background);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Header */
@@ -60,7 +60,7 @@ header:after {
     z-index: 51;
 }
 
-.header-logo {
+.logo {
     color: white;
     padding: 21px;
     cursor: pointer;
@@ -71,11 +71,11 @@ header:after {
 }
 
 
-.header-logo::after {
+.logo::after {
     content: "";
     position: absolute;
     width: 70%;
-    height: 6px;
+    height: 4px;
     background-color: var(--red);
     border-radius: 5px;
     left: 15%;
@@ -84,7 +84,7 @@ header:after {
     bottom: 13px;
 }
 
-.header-logo:hover::after {
+.logo:hover::after {
     transform: scaleX(1);
 }
 
@@ -101,7 +101,7 @@ nav ul {
 
 .menu {
     line-height: 34px;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     text-align: center;
     position: relative;
     list-style: none;
@@ -126,7 +126,7 @@ nav ul {
     content: "";
     position: absolute;
     width: 70%;
-    height: 6px;
+    height: 4px;
     background-color: var(--red);
     border-radius: 5px;
     left: 15%;
@@ -143,7 +143,7 @@ nav ul {
     position: absolute;
     display: inline-block;
     width: 32px;
-    height: 24px;
+    height: 25px;
     display: none;
     cursor: pointer;
 }
@@ -164,8 +164,8 @@ nav ul {
 
 .burger div {
     position: absolute;
-    width: 32px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     transition-timing-function: ease;
     transition-duration: .2s;
     transition-property: transform;
@@ -178,8 +178,8 @@ nav ul {
     top: -10px;
     content: "";
     position: absolute;
-    width: 32px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     border-radius: 4px;
     background-color: #fff;
 }
@@ -188,8 +188,8 @@ nav ul {
     bottom: -10px;
     content: "";
     position: absolute;
-    width: 32px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     border-radius: 4px;
     background-color: #fff;
 }
@@ -205,33 +205,32 @@ nav ul {
 }
 
 /* General Text */
-.text-one {
-    color: white;
-    font-size: 5rem;
-    padding: 100px 0 0;
-    transform: translateX(-725px);
-    animation: here .45s ease forwards;
-    opacity: 0;
+.header-text {
+    margin-left: 10%;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
-.text-one,
-h2 {
-    margin-left: 10%;
+.header-text h1 {
+    color: white;
+    font-size: 4.5rem;
+    transform: translateX(-725px);
+    animation: here .45s ease forwards;
     font-weight: 400;
 }
 
-h2 {
+.header-text h2 {
+    font-weight: 400;
     color: var(--red);
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding: 8px 0;
     transform: translateX(-725px);
     animation: here .45s ease forwards;
 }
 
 /* Main */
-main {
-    background: var(--main-background);
-}
 
 .filtr {
     background: #111111c7;
@@ -243,8 +242,7 @@ section h1 {
     text-align: center;
     cursor: pointer;
     position: relative;
-    padding-top: 100px;
-    margin-bottom: 100px;
+    margin: 10rem 0;
     font-weight: 400;
 }
 
@@ -252,7 +250,7 @@ section h1::after {
     content: "";
     position: absolute;
     width: 250px;
-    height: 6px;
+    height: 5px;
     background-color: var(--red);
     border-radius: 5px;
     left: calc(50% - 85px);
@@ -264,7 +262,7 @@ section h1::before {
     content: "";
     position: absolute;
     width: 250px;
-    height: 6px;
+    height: 5px;
     background-color: var(--red);
     border-radius: 5px;
     left: calc(50% - 150px);
@@ -276,7 +274,7 @@ section .main-contain {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    padding: 10rem 2rem 7rem;
+    padding: 13rem 2rem;
 }
 
 section .main-contain p {
@@ -316,7 +314,7 @@ div.main-contain>div:nth-child(2)::after {
     content: "";
     position: absolute;
     width: 76%;
-    height: 6px;
+    height: 5px;
     background-color: var(--red);
     border-radius: 5px;
     margin: auto;
@@ -328,7 +326,7 @@ div.main-contain>div:nth-child(2)::before {
     content: "";
     position: absolute;
     width: 32%;
-    height: 6px;
+    height: 5px;
     background-color: var(--red);
     border-radius: 5px;
     margin: auto;
@@ -343,16 +341,55 @@ div.main-contain img {
     left: -27px;
 }
 
+#main-skill p {
+    font-size: 2.7rem;
+    color: white;
+    text-align: center;
+    line-height: 37px;
+    padding: 50px 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+.wrap-skill {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 13rem 0;
+}
+
+#main-skill div.skill-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#main-skill p span:nth-child(1) {
+    color: #E34D26;
+}
+
+#main-skill p span:nth-child(2) {
+    color: #1E62AE;
+}
+
+#main-skill p span:nth-child(3) {
+    color: #EFDB4F;
+}
+
+#main-skill img {
+    padding: 20px 20px;
+}
+
 /* footer */
 footer {
     height: 100px;
     width: 100%;
     text-align: center;
-    font-size: 2rem;
-    background: var(--main-background);
+    font-size: 1.8rem;
     color: white;
     line-height: 100px;
-    border-top: 7px solid var(--red);
+}
+
+footer span {
+    color: var(--red)
 }
 
 /* Animaton */
@@ -410,11 +447,11 @@ footer {
         overflow: hidden;
     }
 
-    .header-logo {
+    .logo {
         padding: 10px;
     }
 
-    .header-logo::after {
+    .logo::after {
         bottom: 5px;
         height: 4px;
     }
@@ -469,14 +506,8 @@ footer {
         background: #00000087;
     }
 
-    .text-one,
-    h2 {
+    .header-text {
         text-align: center;
-        margin: auto;
-    }
-
-    .text-one {
-        padding-top: 170px;
     }
 
     html {
@@ -520,8 +551,9 @@ footer {
         z-index: 90;
     }
 
-    .main-contain {
+    section .main-contain {
         flex-direction: column;
+        padding: 5rem 2rem;
     }
 
     section .main-contain p {
@@ -547,6 +579,11 @@ footer {
     div.main-contain>div:nth-child(2)::before {
         content: none;
     }
+
+    .wrap-skill {
+        padding: 5rem 2rem;
+    }
+
 }
 
 @media (max-width: 900px) {
