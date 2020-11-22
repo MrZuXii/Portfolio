@@ -384,7 +384,7 @@ div.main-contain img {
 }
 
 #main-contact div {
-    text-align: left;
+    text-align: center;
     max-width: 900px;
     margin: auto;
     display: flex;
