@@ -87,7 +87,7 @@ header:after {
 }
 
 
-.logo::after {
+/* .logo::after {
     content: "";
     position: absolute;
     width: 70%;
@@ -98,7 +98,7 @@ header:after {
     margin: auto;
     transition: .2s;
     bottom: 13px;
-}
+} */
 
 .logo:hover::after {
     transform: scaleX(1);
@@ -156,12 +156,11 @@ nav ul {
 
 .burger {
     right: 0;
-    padding: 12px;
+    padding: 14px;
     margin-right: 2%;
     position: absolute;
-    display: inline-block;
-    width: 32px;
-    height: 25px;
+    width: 30px;
+    height: 20px;
     display: none;
     cursor: pointer;
 }
@@ -189,11 +188,11 @@ nav ul {
     transition-property: transform;
     border-radius: 4px;
     background-color: #fff;
-    top: 20px;
+    top: 21px;
 }
 
 .burger div::before {
-    top: -10px;
+    top: -9px;
     content: "";
     position: absolute;
     width: 30px;
@@ -202,8 +201,9 @@ nav ul {
     background-color: #fff;
 }
 
+
 .burger div::after {
-    bottom: -10px;
+    bottom: -9px;
     content: "";
     position: absolute;
     width: 30px;
@@ -227,14 +227,15 @@ nav ul {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    font-weight: 400;
     margin-left: 10%;
     font-weight: 400;
+    padding-left: 21px;
+    text-transform: uppercase;
 }
 
 .header-text h1 {
     color: white;
-    font-size: 5.5rem;
+    font-size: 4rem;
     transform: translateX(-725px);
     animation: here .45s ease forwards;
     font-weight: 400;
@@ -243,7 +244,7 @@ nav ul {
 .header-text h2 {
     font-weight: 400;
     color: var(--red);
-    font-size: 4.5rem;
+    font-size: 3rem;
     padding: 8px 0;
     transform: translateX(-725px);
     animation: here .45s ease forwards;
@@ -404,14 +405,14 @@ div.main-contain img {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    padding: 60px 0;
+    padding: 60px 10px;
 }
 
 #main-contact a {
     color: white;
     display: block;
     width: 100%;
-    font-size: 7rem;
+    font-size: 6.5rem;
     margin: 50px 0 100px;
     text-align: center;
 }
@@ -494,10 +495,10 @@ footer span {
         padding: 10px;
     }
 
-    .logo::after {
+    /* .logo::after {
         bottom: 5px;
         height: 4px;
-    }
+    } */
 
     .header {
         position: fixed;
@@ -554,6 +555,7 @@ footer span {
         transform: translate(0, calc(-50% + 24.5px));
         text-align: center;
         margin: 0;
+        padding: 0;
     }
 
     html {
