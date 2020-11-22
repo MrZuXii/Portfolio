@@ -387,6 +387,7 @@ div.main-contain img {
     text-align: left;
     max-width: 900px;
     margin: auto;
+    display: flex;
 }
 
 #main-contact a {
@@ -394,8 +395,11 @@ div.main-contain img {
     display: block;
     width: 100%;
     font-size: 70px;
-    padding: 100px;
-    background-color: #000;
+    margin: 100px 100px 200px;
+}
+
+#main-contact a:hover {
+    color: var(--red);
 }
 
 /* footer */
