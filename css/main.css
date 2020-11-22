@@ -404,6 +404,7 @@ div.main-contain img {
     max-width: 1200px;
     margin: auto;
     display: flex;
+    padding: 60px;
 }
 
 #main-contact a {
