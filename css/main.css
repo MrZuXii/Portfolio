@@ -236,7 +236,7 @@ nav ul {
 
 .header-text h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 4.5rem;
     transform: translateX(-725px);
     animation: here .45s ease forwards;
     font-weight: 400;
@@ -245,7 +245,7 @@ nav ul {
 .header-text h2 {
     font-weight: 400;
     color: var(--red);
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding: 18px 0;
     transform: translateX(-725px);
     animation: here .45s ease forwards;
@@ -560,7 +560,7 @@ footer span {
 
     .header-text h1 {
         color: white;
-        font-size: 3rem;
+        font-size: 3.5rem;
         transform: translateX(-725px);
         animation: 0.45s ease 0s 1 normal forwards running here;
         font-weight: 400;
@@ -569,7 +569,7 @@ footer span {
     .header-text h2 {
         font-weight: 400;
         color: var(--red);
-        font-size: 3rem;
+        font-size: 3.5rem;
         padding: 8px 0px;
         transform: translateX(-725px);
         animation: 0.45s ease 0s 1 normal forwards running here;
