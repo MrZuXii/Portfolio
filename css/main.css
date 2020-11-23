@@ -41,6 +41,7 @@ header {
     position: relative;
     overflow: hidden;
     min-height: 300px;
+    box-shadow: inset 0px -20px 200px 50px black;
 }
 
 header:after {
@@ -617,6 +618,7 @@ footer span {
 
     header {
         height: 385px;
+        box-shadow: none;
     }
 
     .header-text {
