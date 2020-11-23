@@ -130,14 +130,16 @@ nav ul {
 .menu a {
     text-decoration: none;
     display: block;
-    color: #ababab;
+    color: #fafafa;
     padding: 0 20px;
     text-transform: uppercase;
-    line-height: 77px;
+    line-height: 83px;
+    font-family: fantasy;
+    letter-spacing: 1px;
 }
 
 .menu:hover a {
-    color: #eaeaea;
+    color: white;
 }
 
 .menu::after {
@@ -227,11 +229,15 @@ nav ul {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    margin-left: 10%;
+    right: 0;
     font-weight: 400;
     padding-left: 21px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    text-align: center;
+    left: 0;
+    padding: 20px;
+    font-family: fantasy;
+    letter-spacing: 5px;
 }
 
 .header-text h1 {
@@ -266,6 +272,8 @@ section h1 {
     margin: 10rem 0;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: fantasy;
+    letter-spacing: 2px;
 }
 
 section h1::after {
