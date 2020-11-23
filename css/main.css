@@ -134,7 +134,8 @@ nav ul {
     padding: 0 20px;
     text-transform: uppercase;
     line-height: 83px;
-    font-family: fantasy;
+    font-family: 'Anton',
+        sans-serif;
     letter-spacing: 1px;
 }
 
@@ -236,7 +237,8 @@ nav ul {
     text-align: center;
     left: 0;
     padding: 20px;
-    font-family: fantasy;
+    font-family: 'Anton',
+        sans-serif;
     letter-spacing: 5px;
 }
 
@@ -272,7 +274,8 @@ section h1 {
     margin: 10rem 0;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: fantasy;
+    font-family: 'Anton',
+        sans-serif;
     letter-spacing: 2px;
 }
 
