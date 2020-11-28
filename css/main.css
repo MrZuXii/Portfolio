@@ -237,9 +237,8 @@ nav ul li.menu:hover a {
     text-align: center;
     left: 0;
     padding: 20px;
-    font-family: 'Anton',
-        sans-serif;
-    letter-spacing: 3px;
+    font-family: 'Ubuntu';
+    letter-spacing: -1px;
     cursor: default;
 }
 
@@ -263,7 +262,7 @@ nav ul li.menu:hover a {
 .header-text h2 {
     font-weight: 400;
     color: var(--red);
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     padding: 18px 0;
     transform: translateX(-725px);
     animation: here .45s ease forwards;
@@ -618,7 +617,7 @@ footer span {
 
     .header-text h1,
     .header-text h2 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     .header nav {
@@ -703,7 +702,7 @@ footer span {
 
     .header-text h1,
     .header-text h2 {
-        font-size: 4.0rem;
+        font-size: 4.5rem;
     }
 
     /*                           Main                            */
@@ -718,7 +717,7 @@ footer span {
 
     .header-text h1,
     .header-text h2 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 }
 
@@ -726,6 +725,6 @@ footer span {
 
     .header-text h1,
     .header-text h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
