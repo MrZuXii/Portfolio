@@ -1,5 +1,17 @@
+/*----------------------------------------*/
+/*         1.Head                         */
+/*         2.Header                       */
+/*         3.Nawigacja                    */
+/*         4.Burger                       */
+/*         5.Header-text                  */
+/*         6.Main                         */
+/*         7.Footer                       */
+/*         8.Animation                    */
+/*         9.Media                        */
+/*----------------------------------------*/
+
 /*----------------------------------------------------------------*/
-/*                               Head                             */
+/*                              1.Head                            */
 /*----------------------------------------------------------------*/
 :root {
     --main-background: #121315;
@@ -38,7 +50,7 @@ body {
 }
 
 /*----------------------------------------------------------------*/
-/*                             Header                             */
+/*                           2.Header                             */
 /*----------------------------------------------------------------*/
 
 header {
@@ -65,14 +77,14 @@ header:after {
     z-index: -1;
 }
 
-.home-page {
+header .home-page {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.header {
+header .header {
     padding: 50px 0;
     display: flex;
     margin: 0 10%;
@@ -83,7 +95,7 @@ header:after {
     z-index: 51;
 }
 
-.logo {
+header .header .logo {
     color: white;
     padding: 21px;
     cursor: pointer;
@@ -92,16 +104,16 @@ header:after {
     text-decoration: none;
 }
 
-.logo h1 {
+header .header .logo h1 {
     font-weight: 400;
 }
 
-.logo:hover::after {
+header .header .logo:hover::after {
     transform: scaleX(1);
 }
 
 /*----------------------------------------------------------------*/
-/*                             Nawigacja                          */
+/*                           3.Nawigacja                          */
 /*----------------------------------------------------------------*/
 
 nav {
@@ -165,7 +177,7 @@ nav ul li.menu:hover a {
 }
 
 /*----------------------------------------------------------------*/
-/*                             Burger                             */
+/*                            4.Burger                            */
 /*----------------------------------------------------------------*/
 .burger {
     right: 0;
@@ -225,7 +237,7 @@ nav ul li.menu:hover a {
 }
 
 /*----------------------------------------------------------------*/
-/*                           Header-text                          */
+/*                          5.Header-text                         */
 /*----------------------------------------------------------------*/
 .header-text {
     position: absolute;
@@ -269,7 +281,7 @@ nav ul li.menu:hover a {
 }
 
 /*----------------------------------------------------------------*/
-/*                             Main                               */
+/*                            6.Main                              */
 /*----------------------------------------------------------------*/
 
 main section h1 {
@@ -383,8 +395,8 @@ main section div.main-contain img {
     animation: profile 3s linear infinite;
 }
 
-/*                          Main-skill                            */
-#main-skill p {
+/*                         Main-skill                           */
+main section#main-skill p {
     font-size: 2.7rem;
     color: white;
     text-align: center;
@@ -400,24 +412,24 @@ main section .wrap-skill {
     padding: 7rem 0;
 }
 
-#main-skill div.skill-icon {
+main section#main-skill div.skill-icon {
     display: flex;
     justify-content: center;
 }
 
-#main-skill p span:nth-child(1) {
+main section#main-skill p span:nth-child(1) {
     color: #E34D26;
 }
 
-#main-skill p span:nth-child(2) {
+main section#main-skill p span:nth-child(2) {
     color: #1E62AE;
 }
 
-#main-skill p span:nth-child(3) {
+main section#main-skill p span:nth-child(3) {
     color: #EFDB4F;
 }
 
-#main-skill img {
+main section#main-skill img {
     padding: 20px 20px;
 }
 
@@ -445,8 +457,6 @@ main section .project div {
     box-shadow: inset #00000063 0px 0px 12px 0px;
 }
 
-
-
 main section .project div:hover {
     opacity: 1;
 }
@@ -465,7 +475,7 @@ main section .project:hover img {
 }
 
 /*----------------------------------------------------------------*/
-/*                             Footer                             */
+/*                            7.Footer                            */
 /*----------------------------------------------------------------*/
 
 footer {
@@ -503,7 +513,7 @@ footer span {
 }
 
 /*----------------------------------------------------------------*/
-/*                          Animation                             */
+/*                         8.Animation                            */
 /*----------------------------------------------------------------*/
 @keyframes here {
     100% {
@@ -523,7 +533,7 @@ footer span {
 }
 
 /*----------------------------------------------------------------*/
-/*                            Media                               */
+/*                           9.Media                              */
 /*----------------------------------------------------------------*/
 @media (max-width: 1024px) {
 
@@ -551,7 +561,16 @@ footer span {
     }
 
     /*                          Header                            */
-    .header {
+    header {
+        height: 55vw;
+        box-shadow: none;
+    }
+
+    header .header {
+        margin: 0;
+    }
+
+    header .header {
         position: fixed;
         left: 0;
         right: 0;
@@ -560,15 +579,28 @@ footer span {
         border-bottom: 1px solid #000;
     }
 
-    .header .shows {
+    header .header .shows {
         right: 0;
     }
 
-    .logo {
+    header .header .logo {
         padding: 10px;
     }
 
     /*                         Nawigacja                          */
+    nav {
+        right: -70%;
+        background: var(--main-background);
+        z-index: 50;
+        top: 0;
+        justify-content: center;
+        text-transform: uppercase;
+        position: fixed;
+        width: 240px;
+        height: 100vh;
+        transition: .2s;
+    }
+
     nav ul {
         flex-direction: column;
         flex-basis: 100%;
@@ -593,7 +625,6 @@ footer span {
         padding: 0 20px;
     }
 
-
     nav ul li.menu a {
         padding: 10px;
         color: white;
@@ -608,11 +639,20 @@ footer span {
         transform: scaleX(0);
     }
 
+    /*                         Burger                          */
+    .burger {
+        display: block;
+        z-index: 90;
+    }
+
+    /*                         Header-Text                          */
     .header-text {
         transform: translate(0, calc(-50% + 24.5px));
         text-align: center;
         margin: 0;
         padding: 0;
+        right: 0;
+        left: 0;
     }
 
     .header-text h1,
@@ -620,40 +660,7 @@ footer span {
         font-size: 4.5rem;
     }
 
-    .header nav {
-        right: -70%;
-        background: var(--main-background);
-        z-index: 50;
-        top: 0;
-        justify-content: center;
-        text-transform: uppercase;
-        position: fixed;
-        width: 240px;
-        height: 100vh;
-        transition: .2s;
-    }
-
-
-
-    header {
-        height: 55vw;
-        box-shadow: none;
-    }
-
-    .header-text {
-        right: 0;
-        left: 0;
-    }
-
-    .header {
-        margin: 0;
-    }
-
-    .burger {
-        display: block;
-        z-index: 90;
-    }
-
+    /*                         Main                          */
     main section .main-contain {
         flex-direction: column;
         padding: 5rem 2rem;
@@ -664,7 +671,7 @@ footer span {
         transform: none;
     }
 
-    div.main-contain>div {
+    main section div.main-contain>div {
         margin: 0 auto;
     }
 
