@@ -369,7 +369,7 @@ main section div.main-contain>div:nth-child(2)::after {
     border-radius: 5px;
     margin: auto;
     transition: all 0.2s ease 0s;
-    bottom: 45px;
+    bottom: 35px;
 }
 
 main section div.main-contain>div:nth-child(2)::before {
@@ -381,7 +381,7 @@ main section div.main-contain>div:nth-child(2)::before {
     border-radius: 5px;
     margin: auto;
     transition: all 0.2s ease 0s;
-    top: 45px;
+    top: 35px;
 }
 
 main section div.main-contain img {
