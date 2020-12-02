@@ -285,7 +285,7 @@ main section h1 {
     font-size: 4rem;
     color: white;
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     position: relative;
     margin: 10rem 0;
     font-weight: 400;
@@ -576,7 +576,7 @@ footer span {
         border-bottom: 1px solid #000;
     }
 
-    header .header .shows {
+    header .header .on {
         right: 0;
     }
 
