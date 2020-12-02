@@ -369,7 +369,7 @@ main section div.main-contain>div:nth-child(2)::after {
     border-radius: 5px;
     margin: auto;
     transition: all 0.2s ease 0s;
-    bottom: 57px;
+    bottom: 45px;
 }
 
 main section div.main-contain>div:nth-child(2)::before {
@@ -381,6 +381,7 @@ main section div.main-contain>div:nth-child(2)::before {
     border-radius: 5px;
     margin: auto;
     transition: all 0.2s ease 0s;
+    top: 45px;
 }
 
 main section div.main-contain img {
@@ -452,6 +453,8 @@ main section .project div {
     opacity: 0.95;
     position: relative;
     box-shadow: inset #00000063 0px 0px 12px 0px;
+    max-width: 600px;
+    margin: auto;
 }
 
 main section .project div:hover {
