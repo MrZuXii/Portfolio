@@ -14,7 +14,7 @@
 /*                              1.Head                            */
 /*----------------------------------------------------------------*/
 :root {
-    --main-background: #121315;
+    --main-background: #0e0e0e;
     --red: #c00;
 }
 
@@ -23,15 +23,16 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--main-background);
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--red);
+    background: white;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #900000;
+    background: rgb(216, 216, 216);
 }
 
 * {
@@ -42,6 +43,8 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-y: overlay;
 }
 
 body {
@@ -59,29 +62,14 @@ header {
     position: relative;
     overflow: hidden;
     min-height: 375px;
-    box-shadow: inset 0px -20px 200px 50px black;
 }
 
-header:after {
-    /* Photo by luis gomes from Pexels */
-    background-image: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: -1;
-}
 
 header .home-page {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: #000;
 }
 
 header .header {
@@ -280,6 +268,9 @@ nav ul li.menu:hover a {
 /*----------------------------------------------------------------*/
 /*                            6.Main                              */
 /*----------------------------------------------------------------*/
+main section {
+    padding: 10rem 0;
+}
 
 main section h1 {
     font-size: 4rem;
@@ -287,12 +278,12 @@ main section h1 {
     text-align: center;
     cursor: default;
     position: relative;
-    margin: 10rem 0;
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Anton',
         sans-serif;
     letter-spacing: 2px;
+    margin: 0 0 5rem;
 }
 
 main section h1::after {
@@ -394,6 +385,10 @@ main section div.main-contain img {
 }
 
 /*                         Main-skill                           */
+#main-skill {
+    background: #000;
+}
+
 main section#main-skill p {
     font-size: 2.7rem;
     color: white;
@@ -452,7 +447,7 @@ main section .project div {
     border-radius: 2%;
     opacity: 0.95;
     position: relative;
-    box-shadow: inset #00000063 0px 0px 12px 0px;
+    border: 3px solid #000;
     max-width: 600px;
     margin: auto;
 }
@@ -484,7 +479,7 @@ footer {
     font-size: 1.8rem;
     color: white;
     line-height: 100px;
-    background: #0D0E10;
+    background: #000;
     margin-top: 10rem;
 }
 
