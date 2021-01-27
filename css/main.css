@@ -14,7 +14,7 @@
 /*                              1.Head                            */
 /*----------------------------------------------------------------*/
 :root {
-    --main-background: #0e0e0e;
+    --main-background: #18191D;
     --red: #c00;
 }
 
@@ -28,7 +28,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: white;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -447,7 +447,6 @@ main section .project div {
     border-radius: 2%;
     opacity: 0.95;
     position: relative;
-    border: 3px solid #000;
     max-width: 600px;
     margin: auto;
 }
