@@ -1,3 +1,3 @@
 # About
 
-https://mrzuxii.github.io/portfolio/
+https://www.kamilbieniek.pl/
