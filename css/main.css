@@ -18,20 +18,20 @@
     --red: #c00;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 1px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
     background: rgb(216, 216, 216);
 }
 
@@ -44,7 +44,6 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     overflow-y: scroll;
-    overflow-y: overlay;
 }
 
 body {
@@ -62,14 +61,13 @@ header {
     position: relative;
     overflow: hidden;
     min-height: 375px;
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; 
-    user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
-
 
 header .home-page {
     position: absolute;
@@ -278,7 +276,7 @@ main section {
     padding: 10rem 0;
 }
 
-main section h1 {
+main section h2 {
     font-size: 4rem;
     color: white;
     text-align: center;
@@ -292,7 +290,7 @@ main section h1 {
     margin: 0 0 5rem;
 }
 
-main section h1::after {
+main section h2::after {
     content: "";
     position: absolute;
     width: 250px;
@@ -304,7 +302,7 @@ main section h1::after {
     bottom: -32px;
 }
 
-main section h1::before {
+main section h2::before {
     content: "";
     position: absolute;
     width: 250px;
@@ -327,6 +325,7 @@ main section .main-contain {
 main section .main-contain p {
     position: absolute;
     top: 50%;
+    max-width: 765px;
     transform: translateY(-50%);
 }
 
